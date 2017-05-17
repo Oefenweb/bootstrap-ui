@@ -36,8 +36,8 @@ class FormHelper extends Helper
         'dateWidget' => '<ul class="list-inline"><li class="year">{{year}}</li><li class="month">{{month}}</li><li class="day">{{day}}</li><li class="hour">{{hour}}</li><li class="minute">{{minute}}</li><li class="second">{{second}}</li><li class="meridian">{{meridian}}</li></ul>',
         'error' => '<div class="help-block">{{content}}</div>',
         'help' => '<div class="help-block">{{content}}</div>',
-        'inputContainer' => '<div class="form-group {{type}}{{required}}">{{content}}{{help}}</div>',
-        'inputContainerError' => '<div class="form-group {{type}}{{required}} has-error">{{content}}{{error}}{{help}}</div>',
+        'inputContainer' => '<div class="form-group clearfix {{type}}{{required}}">{{content}}{{help}}</div>',
+        'inputContainerError' => '<div class="form-group clearfix {{type}}{{required}} has-error">{{content}}{{error}}{{help}}</div>',
         'radioInlineFormGroup' => '{{label}}<div class="radio-inline-wrapper">{{input}}</div>',
         'radioNestingLabel' => '<div class="radio">{{hidden}}<label{{attrs}}>{{input}}{{text}}</label></div>',
         'staticControl' => '<p class="form-control-static">{{content}}</p>',
@@ -60,12 +60,12 @@ class FormHelper extends Helper
             'inputContainer' => '{{content}}'
         ],
         'horizontal' => [
-            'label' => '<label class="control-label %s"{{attrs}}>{{text}}</label>',
+            'label' => '<label class="control-label form-control-label %s"{{attrs}}>{{text}}</label>',
             'formGroup' => '{{label}}<div class="%s">{{input}}{{error}}{{help}}</div>',
             'checkboxFormGroup' => '<div class="%s"><div class="checkbox">{{label}}</div>{{error}}{{help}}</div>',
             'submitContainer' => '<div class="form-group"><div class="%s">{{content}}</div></div>',
-            'inputContainer' => '<div class="form-group {{type}}{{required}}">{{content}}</div>',
-            'inputContainerError' => '<div class="form-group {{type}}{{required}} has-error">{{content}}</div>',
+            'inputContainer' => '<div class="form-group clearfix {{type}}{{required}}">{{content}}</div>',
+            'inputContainerError' => '<div class="form-group clearfix {{type}}{{required}} has-error">{{content}}</div>',
             'checkboxContainer' => '<div class="form-group{{required}}">{{content}}</div>',
             'checkboxContainerError' => '<div class="form-group{{required}} has-error">{{content}}</div>',
         ]
